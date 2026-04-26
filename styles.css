@@ -1,64 +1,151 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BASE */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
 }
 
-header {
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* NAVBAR */
+.navbar {
   background: #0f172a;
-  color: white;
-  text-align: center;
-  padding: 2rem;
+  padding: 1rem 0;
 }
 
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #cbd5f5;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+/* HERO */
 .hero {
-  background: #1e293b;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 5rem 0;
 }
 
-.hero button {
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+.hero p {
   margin-top: 1rem;
-  padding: 0.7rem 1.5rem;
+  color: #cbd5f5;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
   border: none;
+  cursor: pointer;
+}
+
+.primary {
   background: #38bdf8;
   color: black;
-  cursor: pointer;
-  font-weight: bold;
+  margin-right: 1rem;
 }
 
-section {
-  padding: 2rem;
+.secondary {
+  background: transparent;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
 }
 
-.about, .how-it-works {
+/* SECTIONS */
+.section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section-text {
+  max-width: 600px;
+  margin: auto;
+  color: #64748b;
+}
+
+.alt {
+  background: #f1f5f9;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
   background: white;
-  margin: 1rem;
+  padding: 1.5rem;
   border-radius: 10px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-.benefits {
-  background: #e2e8f0;
-  margin: 1rem;
-  border-radius: 10px;
+.card.small {
+  max-width: 250px;
 }
 
-.benefits ul {
-  margin-top: 1rem;
-  padding-left: 1.5rem;
-}
-
-footer {
+/* CTA */
+.cta {
   background: #0f172a;
   color: white;
   text-align: center;
+  padding: 3rem 0;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
   padding: 1rem;
-  margin-top: 1rem;
+  background: #020617;
+  color: #94a3b8;
 }
