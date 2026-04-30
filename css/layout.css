@@ -1,0 +1,53 @@
+.container {
+  width: var(--container-width, 90%);
+  max-width: var(--container-max-width, 70rem);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+}
+
+.section-text {
+  max-width: 40rem;
+  margin: 1rem auto;
+  color: var(--color-text-muted, #64748b);
+}
+
+.cards {
+  display: grid;
+  grid-template-areas: "card1 card2 card3";
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-areas:
+      "card1 card2"
+      "card3 card3";
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3";
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

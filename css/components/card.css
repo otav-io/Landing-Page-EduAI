@@ -1,0 +1,35 @@
+.card:nth-child(1) {
+  grid-area: card1;
+}
+
+.card:nth-child(2) {
+  grid-area: card2;
+}
+
+.card:nth-child(3) {
+  grid-area: card3;
+}
+
+.card {
+  background: var(--color-bg-card, white);
+  padding: 1.5rem;
+  border-radius: var(--border-radius-md, 0.6rem);
+  box-shadow: var(--shadow-md, 0 0.3rem 1rem rgba(0,0,0,0.05));
+  text-align: left;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #64748b);
+}
+
+@media (max-width: 768px) {
+  .card {
+    text-align: center;
+  }
+}

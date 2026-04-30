@@ -1,0 +1,42 @@
+:root {
+  /* CORES PRINCIPAIS */
+  --color-primary: #38bdf8;
+  --color-primary-hover: #0ea5e9;
+  
+  /* BACKGROUNDS */
+  --color-bg-default: #f8fafc;
+  --color-bg-alt: #f1f5f9;
+  --color-bg-dark: #0f172a;
+  --color-bg-darker: #020617;
+  --color-bg-card: #ffffff;
+  
+  /* TEXTOS */
+  --color-text-main: #1e293b;
+  --color-text-muted: #64748b;
+  --color-text-light: #cbd5f5;
+  --color-white: #ffffff;
+  
+  /* TIPOGRAFIA - Montserrat conforme google fonts */
+  --font-main: "Montserrat", sans-serif;
+  
+  /* ESPAÇAMENTOS E TAMANHOS */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 4rem;
+  
+  --container-width: 90%;
+  --container-max-width: 70rem;
+  
+  /* BORDAS E SOMBRAS */
+  --border-radius-sm: 0.4rem;
+  --border-radius-md: 0.6rem;
+  --shadow-sm: 0 0.1rem 0.3rem rgba(0,0,0,0.05);
+  --shadow-md: 0 0.3rem 1rem rgba(0,0,0,0.05);
+  
+  /* TRANSIÇÕES */
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease;
+}

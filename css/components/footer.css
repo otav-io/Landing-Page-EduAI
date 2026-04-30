@@ -1,0 +1,28 @@
+.cta {
+  padding: 3rem 0;
+  text-align: center;
+  background: var(--color-bg-dark, #0f172a);
+  color: var(--color-white, white);
+}
+
+.cta h2 {
+  font-weight: 700;
+}
+
+.cta button.primary {
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius-sm, 0.4rem);
+  border: none;
+  cursor: pointer;
+  background: var(--color-primary, #38bdf8);
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  background: var(--color-bg-darker, #020617);
+  color: var(--color-text-muted, #94a3b8);
+  font-size: 0.8rem;
+}
