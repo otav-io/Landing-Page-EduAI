@@ -1,28 +1,85 @@
-.cta {
-  padding: 3rem 0;
-  text-align: center;
-  background: var(--color-bg-dark, #0f172a);
-  color: var(--color-white, white);
+.footer {
+  background: var(--color-footer-bg);
+  color: var(--color-footer-text);
+  padding: var(--spacing-xl) 0 var(--spacing-lg);
+  margin-top: auto;
 }
 
-.cta h2 {
+.footer__inner {
+  width: var(--container-width);
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+}
+
+.footer__brand {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
   font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-sm);
 }
 
-.cta button.primary {
-  padding: 0.8rem 1.5rem;
-  border-radius: var(--border-radius-sm, 0.4rem);
-  border: none;
-  cursor: pointer;
-  background: var(--color-primary, #38bdf8);
-  margin-top: 1rem;
-  font-weight: 500;
+.footer__description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 22rem;
 }
 
-footer {
-  padding: 1rem;
+.footer__heading {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.footer__link {
+  color: var(--color-footer-text);
+  font-size: 0.9rem;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer__link:hover {
+  color: var(--color-white);
+}
+
+.footer__link:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+.footer__copy {
+  font-size: 0.85rem;
   text-align: center;
-  background: var(--color-bg-darker, #020617);
-  color: var(--color-text-muted, #94a3b8);
-  font-size: 0.8rem;
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid color-mix(in srgb, var(--color-footer-text) 35%, transparent);
+}
+
+@media (min-width: 768px) {
+  .footer__copy {
+    text-align: left;
+  }
 }

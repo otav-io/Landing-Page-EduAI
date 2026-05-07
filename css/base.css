@@ -1,8 +1,16 @@
 body {
-  font-family: var(--font-main, "Montserrat", sans-serif);
-  background: var(--color-bg-default, #f8fafc);
-  color: var(--color-text-main, #1e293b);
+  font-family: var(--font-body);
+  background: var(--color-bg-default);
+  color: var(--color-text-main);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
 }

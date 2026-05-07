@@ -8,118 +8,172 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap"
     rel="stylesheet">
 
+  <!-- ITCSS -->
   <link rel="stylesheet" href="../css/variables.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/base.css">
   <link rel="stylesheet" href="../css/layout.css">
-  <link rel="stylesheet" href="../css/components/nav.css">
+  <link rel="stylesheet" href="../css/components/navbar.css">
   <link rel="stylesheet" href="../css/components/hero.css">
   <link rel="stylesheet" href="../css/components/card.css">
+  <link rel="stylesheet" href="../css/components/btn.css">
+  <link rel="stylesheet" href="../css/components/cta.css">
   <link rel="stylesheet" href="../css/components/footer.css">
   <link rel="stylesheet" href="../css/utilities.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="container nav-content">
-      <h1 class="logo">EduAI</h1>
-      <ul class="nav-links">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Funcionalidades</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h2>Transformando a educação com IA</h2>
-      <p>Uma plataforma que adapta o aprendizado para cada aluno.</p>
-      <div class="buttons">
-        <button class="primary">Começar agora</button>
-        <button class="secondary">Saiba mais</button>
+  <header class="header">
+    <nav class="navbar" aria-label="Principal">
+      <a class="navbar__brand" href="#">EduAI</a>
+      <button class="navbar__toggle" type="button" id="navbar-toggle" aria-expanded="false"
+        aria-controls="navbar-menu" aria-label="Abrir menu de navegação">
+        <span class="navbar__toggle-bar" aria-hidden="true"></span>
+        <span class="navbar__toggle-bar" aria-hidden="true"></span>
+        <span class="navbar__toggle-bar" aria-hidden="true"></span>
+      </button>
+      <div class="navbar__collapse" id="navbar-menu">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#">Início</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#sobre">Sobre</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#funcionalidades">Funcionalidades</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contato">Contato</a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </nav>
+  </header>
 
-  <!-- SOBRE -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Sobre o Projeto</h2>
-      <p class="section-text">
-        O EduAI é um sistema educacional interativo desenvolvido como TCC,
-        focado em melhorar o processo de aprendizagem utilizando inteligência artificial.
-      </p>
-    </div>
-  </section>
-
-  <!-- FUNCIONALIDADES -->
-  <section class="section alt">
-    <div class="container">
-      <h2 class="section-title">Funcionalidades</h2>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Aprendizado Personalizado</h3>
-          <p>Conteúdos adaptados ao nível do aluno.</p>
-        </div>
-
-        <div class="card">
-          <h3>Interatividade</h3>
-          <p>Experiência dinâmica e envolvente.</p>
-        </div>
-
-        <div class="card">
-          <h3>Feedback Inteligente</h3>
-          <p>Sugestões baseadas no desempenho.</p>
+  <main class="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1 class="hero__title">Transformando a educação com IA</h1>
+        <p class="hero__lead">Uma plataforma que adapta o aprendizado para cada aluno.</p>
+        <div class="hero__actions">
+          <button type="button" class="btn btn--primary btn--block-sm">Começar agora</button>
+          <button type="button" class="btn btn--outline btn--block-sm">Saiba mais</button>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PÚBLICO -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Para quem é?</h2>
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <h2 class="section__title">Sobre o Projeto</h2>
+        <p class="section__text">
+          O EduAI é um sistema educacional interativo desenvolvido como TCC,
+          focado em melhorar o processo de aprendizagem utilizando inteligência artificial.
+        </p>
+      </div>
+    </section>
 
-      <div class="cards">
-        <div class="card small">
-          <h3>Estudantes</h3>
-          <p>Aprendizado mais eficiente e personalizado.</p>
-        </div>
+    <!-- FUNCIONALIDADES -->
+    <section class="section alt" id="funcionalidades">
+      <div class="container">
+        <h2 class="section__title">Funcionalidades</h2>
 
-        <div class="card small">
-          <h3>Professores</h3>
-          <p>Acompanhamento e insights de desempenho.</p>
-        </div>
+        <div class="cards-grid">
+          <article class="card card--featured">
+            <h3 class="card__title">Aprendizado Personalizado</h3>
+            <p class="card__body">Conteúdos adaptados ao nível do aluno, com trilhas que evoluem conforme o desempenho.
+            </p>
+          </article>
 
-        <div class="card small">
-          <h3>Instituições</h3>
-          <p>Educação mais moderna e inovadora.</p>
+          <article class="card">
+            <h3 class="card__title">Interatividade</h3>
+            <p class="card__body">Experiência dinâmica e envolvente para manter o foco no estudo.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Feedback Inteligente</h3>
+            <p class="card__body">Sugestões baseadas no desempenho para orientar a revisão.</p>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">Painel de progresso</h3>
+            <p class="card__body">Visualize marcos, tempo de estudo e metas de aprendizagem em um só lugar.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA -->
-  <section class="cta">
-    <div class="container">
-      <h2>Pronto para transformar o aprendizado?</h2>
-      <button class="primary">Saiba mais</button>
-    </div>
-  </section>
+    <!-- PÚBLICO -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">Para quem é?</h2>
 
-  <footer>
-    <p>© 2026 - EduAI | TCC</p>
+        <div class="cards-grid">
+          <article class="card card--compact">
+            <h3 class="card__title">Estudantes</h3>
+            <p class="card__body">Aprendizado mais eficiente e personalizado.</p>
+          </article>
+
+          <article class="card card--compact">
+            <h3 class="card__title">Professores</h3>
+            <p class="card__body">Acompanhamento e insights de desempenho.</p>
+          </article>
+
+          <article class="card card--compact">
+            <h3 class="card__title">Instituições</h3>
+            <p class="card__body">Educação mais moderna e inovadora.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contato">
+      <div class="cta__inner">
+        <h2 class="cta__title">Pronto para transformar o aprendizado?</h2>
+        <button type="button" class="btn btn--primary">Saiba mais</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div class="footer__col">
+          <span class="footer__brand">EduAI</span>
+          <p class="footer__description">
+            Transformando a educação com inteligência artificial. Projeto acadêmico — TCC.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__heading">Institucional</h3>
+          <ul class="footer__list">
+            <li><a class="footer__link" href="#">Sobre</a></li>
+            <li><a class="footer__link" href="#funcionalidades">Funcionalidades</a></li>
+            <li><a class="footer__link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3 class="footer__heading">Legal</h3>
+          <ul class="footer__list">
+            <li><a class="footer__link" href="#">Privacidade</a></li>
+            <li><a class="footer__link" href="#">Termos</a></li>
+            <li><a class="footer__link" href="#">Suporte</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">© <span id="footer-year"></span> — EduAI | TCC</p>
+    </div>
   </footer>
 
+  <script src="../js/main.js"></script>
 </body>
 
 </html>
