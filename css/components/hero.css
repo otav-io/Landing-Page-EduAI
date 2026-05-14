@@ -34,8 +34,8 @@
 
 /* Botões sobre fundo escuro */
 .hero .btn--primary {
-  background: var(--color-primary-500);
-  border-color: var(--color-primary-500);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
   color: var(--color-white);
 }
 

@@ -1,0 +1,20 @@
+@layer tokens, reset, base, components, utilities;
+
+@import url("./tokens/primitives.css") layer(tokens);
+@import url("./tokens/semantic.css") layer(tokens);
+@import url("./tokens/spacing.css") layer(tokens);
+@import url("./tokens/typography.css") layer(tokens);
+
+@import url("./reset.css") layer(reset);
+
+@import url("./base.css") layer(base);
+@import url("./layout.css") layer(base);
+
+@import url("./components/navbar.css") layer(components);
+@import url("./components/hero.css") layer(components);
+@import url("./components/card.css") layer(components);
+@import url("./components/btn.css") layer(components);
+@import url("./components/cta.css") layer(components);
+@import url("./components/footer.css") layer(components);
+
+@import url("./utilities.css") layer(utilities);

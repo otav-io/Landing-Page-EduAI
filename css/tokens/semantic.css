@@ -1,0 +1,54 @@
+/* Arquivo semântico - intenções de uso e temas */
+:root {
+  /* Brand */
+  --color-primary-500: var(--_blue-500); /* Manter a variável original para compatibilidade, caso necessário */
+  --color-primary: var(--_blue-500);
+  --color-primary-hover: var(--_blue-600);
+
+  /* Surfaces */
+  --color-bg-default: var(--_slate-50);
+  --color-bg-alt: var(--_slate-100);
+  --color-bg-card: var(--_white);
+  --color-bg-dark: var(--_slate-900);
+  --color-bg-darker: var(--_slate-950);
+  --color-footer-bg: var(--_gray-900);
+
+  /* Text */
+  --color-text-main: var(--_slate-800);
+  --color-text-muted: var(--_slate-500);
+  --color-text-light: var(--_slate-100);
+  --color-footer-text: var(--_gray-400);
+  --color-white: var(--_white);
+
+  /* Borders & Shadows */
+  --border-radius-sm: 0.4rem;
+  --border-radius-md: 0.6rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-full: 9999px;
+
+  --shadow-sm: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 0.3rem 1rem rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 0.75rem 2rem rgba(0, 0, 0, 0.12);
+  --shadow-header: 0 0.25rem 1rem rgba(0, 0, 0, 0.08);
+  --shadow-header-scrolled: 0 0.35rem 1.25rem rgba(0, 0, 0, 0.12);
+
+  /* Misc */
+  --z-header: 100;
+  --focus-ring: 2px solid var(--color-primary);
+  --focus-ring-offset: 2px;
+  
+  --transition-fast: 0.2s ease-in-out;
+  --transition-normal: 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --color-bg-default: var(--_slate-950);
+  --color-bg-alt: var(--_slate-900);
+  --color-bg-card: var(--_slate-800);
+  
+  --color-text-main: var(--_slate-50);
+  --color-text-muted: var(--_slate-300);
+  
+  --color-footer-bg: var(--_slate-950);
+  --shadow-md: 0 0.3rem 1rem rgba(0, 0, 0, 0.4);
+}
