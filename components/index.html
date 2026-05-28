@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduAI</title>
+  <title>EduAI — Inteligência Artificial na Educação</title>
 
+  <!-- Fontes do Google e Ícones -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lexend:wght@400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@200..700,0..1&display=swap"
     rel="stylesheet">
 
   <!-- ITCSS com @layer -->
@@ -30,7 +31,7 @@
       <div class="navbar__collapse" id="navbar-menu">
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a class="navbar__link" href="#">Início</a>
+            <a class="navbar__link navbar__link--active" href="#">Início</a>
           </li>
           <li class="navbar__item">
             <a class="navbar__link" href="#sobre">Sobre</a>
@@ -43,6 +44,10 @@
           </li>
         </ul>
       </div>
+      <div class="navbar__actions">
+        <button class="btn btn--ghost btn--sm">Entrar</button>
+        <button class="btn btn--primary btn--round btn--sm">Começar Agora</button>
+      </div>
     </nav>
   </header>
 
@@ -50,85 +55,136 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container hero__inner">
-        <h1 class="hero__title">Transformando a educação com IA</h1>
-        <p class="hero__lead">Uma plataforma que adapta o aprendizado para cada aluno.</p>
-        <div class="hero__actions">
-          <button type="button" class="btn btn--primary btn--block-sm">Começar agora</button>
-          <button type="button" class="btn btn--outline btn--block-sm">Saiba mais</button>
+        <div class="hero__content">
+          <span class="hero__badge">Inteligência Artificial na Educação</span>
+          <h1 class="hero__title">Transformando a educação com IA</h1>
+          <p class="hero__lead">Uma plataforma que adapta o aprendizado para cada aluno, criando trilhas de conhecimento personalizadas e acelerando o desenvolvimento acadêmico.</p>
+          <div class="hero__actions">
+            <button type="button" class="btn btn--primary btn--block-sm">Começar agora</button>
+            <button type="button" class="btn btn--outline btn--block-sm">Saiba mais</button>
+          </div>
+        </div>
+        <div class="hero__image-wrapper">
+          <div class="hero__image-container">
+            <img class="hero__image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTFmRRrskTIHadwH8hwT5KBh9uyuFqPM6ssXcPKveCdznyi9LyKu4eJjvZJ66f-27ukQh3W-QiEfryT4VralHU5OwMCZ_P1_m7EcNk2Tj8kfPUytzgak4XbkQIVu2rT4eF5NA1eglUXjqL5AQ4lhuH_mDGe-2K4zsPCgaTvtyP79sgT9g94zeZtZvggUlTU_j_USQTDQukegwiQ9lEihPrD9je4EWU9VTTWp1yoLnonfjW9FUp9UvkD6wcCV6aneA7XUsfInSefbW-" alt="Espaço de estudo moderno minimalista com laptop e tablet">
+            <div class="hero__image-overlay"></div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SOBRE -->
-    <section class="section" id="sobre">
+    <section class="section alt" id="sobre">
       <div class="container">
-        <h2 class="section__title">Sobre o Projeto</h2>
-        <p class="section__text">
-          O EduAI é um sistema educacional interativo desenvolvido como TCC,
-          focado em melhorar o processo de aprendizagem utilizando inteligência artificial.
-        </p>
+        <div class="about__grid">
+          <div class="about__image-wrapper">
+            <img class="about__image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkac2_Mj7rSjKHRHa1hfkNW-tnglcXfzO2xMs8CsGBSw-28WGRt8nPHExKMYC8S8RYNpi6IltUS9LjEZD5zvoKI-ogH70npzU52FC3fj_FRKwirOpjnB-4aOXGkzJN64WZdrM-u-sq_sirRna5Mu2GgIrWb_X_1QnXG1nf3nTW6F4XSsfk73LhAs2pjfbcNjjfwbNX_Hkn68d3oEitWmfA0llPjn4xQ1n0ZWqGFj8s7fsbqFbQJz-TLL5EM7um1AmnfJ2Bo0FpaUq4" alt="Estudantes universitários colaborando em um laboratório com painel interativo">
+          </div>
+          <div class="about__content">
+            <h2 class="section__title">Sobre o Projeto</h2>
+            <p class="section__text" style="text-align: left; margin: 0 0 1rem 0;">
+              O EduAI é um sistema educacional interativo desenvolvido como Trabalho de Conclusão de Curso (TCC),
+              focado em melhorar o processo de aprendizagem utilizando inteligência artificial de ponta.
+            </p>
+            <p class="section__text" style="text-align: left; margin: 0;">
+              Nascemos da necessidade de individualizar o ensino em um mundo onde cada estudante possui
+              seu próprio ritmo e estilo de descoberta. Nossa tecnologia atua como um guia empoderador,
+              transformando dados em caminhos claros para o sucesso.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- FUNCIONALIDADES -->
-    <section class="section alt" id="funcionalidades">
+    <section class="section" id="funcionalidades">
       <div class="container">
         <h2 class="section__title">Funcionalidades</h2>
+        <p class="section__text" style="margin-bottom: 2rem;">Tecnologia desenhada para elevar o potencial humano através de ferramentas inteligentes.</p>
 
         <div class="cards-grid">
           <article class="card card--featured">
+            <div class="card__icon-wrapper card__icon-wrapper--primary">
+              <span class="material-symbols-outlined card__icon">psychology</span>
+            </div>
             <h3 class="card__title">Aprendizado Personalizado</h3>
             <p class="card__body">Conteúdos adaptados ao nível do aluno, com trilhas que evoluem conforme o desempenho.
             </p>
           </article>
 
           <article class="card">
+            <div class="card__icon-wrapper card__icon-wrapper--secondary">
+              <span class="material-symbols-outlined card__icon">ads_click</span>
+            </div>
             <h3 class="card__title">Interatividade</h3>
-            <p class="card__body">Experiência dinâmica e envolvente para manter o foco no estudo.</p>
+            <p class="card__body">Experiência dinâmica e envolvente com gamificação e interfaces intuitivas que promovem o foco.</p>
           </article>
 
           <article class="card">
+            <div class="card__icon-wrapper card__icon-wrapper--tertiary">
+              <span class="material-symbols-outlined card__icon">auto_graph</span>
+            </div>
             <h3 class="card__title">Feedback Inteligente</h3>
-            <p class="card__body">Sugestões baseadas no desempenho para orientar a revisão.</p>
+            <p class="card__body">Sugestões baseadas no desempenho individual, orientando o estudo de forma estratégica e eficaz.</p>
           </article>
 
           <article class="card">
-            <h3 class="card__title">Painel de progresso</h3>
-            <p class="card__body">Visualize marcos, tempo de estudo e metas de aprendizagem em um só lugar.</p>
+            <div class="card__icon-wrapper card__icon-wrapper--primary">
+              <span class="material-symbols-outlined card__icon">dashboard</span>
+            </div>
+            <h3 class="card__title">Painel de Progresso</h3>
+            <p class="card__body">Visualize marcos, tempo de estudo e metas de aprendizagem em um só lugar de forma simples.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- PÚBLICO -->
-    <section class="section">
+    <section class="section alt">
       <div class="container">
-        <h2 class="section__title">Para quem é?</h2>
+        <h2 class="section__title" style="margin-bottom: 3rem;">Para quem é?</h2>
 
-        <div class="cards-grid">
+        <div class="cards-grid audience-grid">
           <article class="card card--compact">
+            <div class="card__image-wrapper">
+              <img class="card__image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3Xy71UL61vqO2bRYzsGV0kDrawaqbrpwlR6UdY9NulZdVmP49PeaOQ6wFjXFC1dIb7iw4-b3g7rD_Wp8_omOiOeq6EfPkiMRi8wObfdMVIivDnlbDhQNrnJGII1OM5W63IQA3Q5C3vB4-3SXxHpOT899A1Yph5ZgBSu3iXIorn-4S6lDGdF8Ws-oGuE5Ji3wD12OB6yAOfscnexkJPKz4uDW1vzrL2w-bPlMImpVWSbFNc0BkWHT25MtYBTUnm1dfwib0ye_ISv9I" alt="Estudante concentrado estudando com fones e laptop">
+            </div>
+            <span class="card__tag card__tag--secondary">Crescimento</span>
             <h3 class="card__title">Estudantes</h3>
-            <p class="card__body">Aprendizado mais eficiente e personalizado.</p>
+            <p class="card__body">Aprendizado mais eficiente e personalizado para quem busca dominar novos conhecimentos com rapidez.</p>
           </article>
 
           <article class="card card--compact">
+            <div class="card__image-wrapper">
+              <img class="card__image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb1GHbru1hIq1yaKbvDuUoVnKbgkA5e9zJMPp0m7rorEZTr0nLoRrygUqr7V9iMMHgU_BKhBe22ye4P3mNoPTZPTV3K8faY-UBXeKGhit7ss9nxzoP6YVhCSmIvfLzBWWbVxSCYJXc3IdQVo3mtBEJLOimj0AYM7DJss6GwGe6ep4nhE4stK896HekJFwY3ekThrejjxL7xKVSC0DbQskAri_BjLGhuvnkgGZGN_no5kXdLBrU-R_lIZUbItpsR4-XX070C2mSuI05" alt="Educador em frente a painel interativo exibindo dados de desempenho">
+            </div>
+            <span class="card__tag card__tag--primary">Gestão</span>
             <h3 class="card__title">Professores</h3>
-            <p class="card__body">Acompanhamento e insights de desempenho.</p>
+            <p class="card__body">Acompanhamento detalhado e insights de desempenho que permitem intervenções pedagógicas precisas.</p>
           </article>
 
           <article class="card card--compact">
+            <div class="card__image-wrapper">
+              <img class="card__image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC49iSyMxEGcz-DsDq-niaUB6VMSYTWtQyDC6uwG0zdyHcQhjdeMuAIj8ElaY6MI_-jAJ3cU8Dab0Yop1fapdpS1vzHr69mOLaWZy2cqITkHTixupLdrWZ5wW8H6-gQVxjlemSq_bjZZGbbdqJ4nZZ5Q6ZeL7ZDcsZbUW7aVUf8iUCFgQRJgRj1SDi5wbCmcduNwHRNzhgNfigndFpHuETd4gDSho5Ol6fQQPLNJd616qIurVcDoyrFVPQ-ZDFQC1U_QCBO02fCNsmr" alt="Campus universitário moderno com fachada de vidro">
+            </div>
+            <span class="card__tag card__tag--tertiary">Inovação</span>
             <h3 class="card__title">Instituições</h3>
-            <p class="card__body">Educação mais moderna e inovadora.</p>
+            <p class="card__body">Educação mais moderna e inovadora para escolas e universidades que desejam liderar a revolução digital.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="cta" id="contato">
-      <div class="cta__inner">
-        <h2 class="cta__title">Pronto para transformar o aprendizado?</h2>
-        <button type="button" class="btn btn--primary">Saiba mais</button>
+    <section class="cta section" id="contato">
+      <div class="container">
+        <div class="cta__card">
+          <div class="cta__inner">
+            <h2 class="cta__title">Pronto para transformar o aprendizado?</h2>
+            <p class="cta__description">Junte-se à revolução da inteligência artificial aplicada à educação e descubra um novo mundo de possibilidades.</p>
+            <button type="button" class="btn btn--round">Saiba mais</button>
+          </div>
+        </div>
       </div>
     </section>
   </main>

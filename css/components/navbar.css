@@ -3,18 +3,22 @@
   position: sticky;
   top: 0;
   z-index: var(--z-header);
-  background: var(--color-bg-dark);
+  background: var(--color-header-bg, rgba(255, 255, 255, 0.95));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border-light);
   box-shadow: var(--shadow-header);
-  transition: box-shadow var(--transition-fast), padding var(--transition-fast);
+  transition: box-shadow var(--transition-fast), padding var(--transition-fast), background-color var(--transition-fast);
 }
 
 .header--scrolled {
   box-shadow: var(--shadow-header-scrolled);
+  background: var(--color-header-bg-scrolled, rgba(255, 255, 255, 0.98));
 }
 
 .header--scrolled .navbar {
-  padding-top: var(--header-padding-y-scrolled);
-  padding-bottom: var(--header-padding-y-scrolled);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* Bloco: navbar */
@@ -24,8 +28,8 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--spacing-sm);
-  padding-top: var(--header-padding-y);
-  padding-bottom: var(--header-padding-y);
+  padding-top: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
   max-width: var(--container-max-width);
   width: var(--container-width);
   margin-inline: auto;
@@ -34,13 +38,15 @@
 .navbar__brand {
   font-family: var(--font-heading);
   font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-white);
+  font-weight: 800;
+  color: var(--color-primary);
   text-decoration: none;
+  letter-spacing: -0.03em;
+  transition: color var(--transition-fast);
 }
 
 .navbar__brand:hover {
-  color: var(--color-text-light);
+  color: var(--color-primary-hover);
 }
 
 .navbar__toggle {
@@ -53,8 +59,13 @@
   padding: 0.5rem;
   margin-left: auto;
   border-radius: var(--border-radius-sm);
-  color: var(--color-white);
+  color: var(--color-text-main);
   background: transparent;
+  transition: background-color var(--transition-fast);
+}
+
+.navbar__toggle:hover {
+  background-color: var(--color-border-light);
 }
 
 .navbar__toggle:focus-visible {
@@ -87,27 +98,53 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
-  padding: var(--spacing-md) 0 0;
+  padding: var(--spacing-md) 0;
   list-style: none;
 }
 
 .navbar__link {
-  display: block;
-  padding: var(--spacing-xs) 0;
-  color: var(--color-text-light);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 var(--spacing-sm);
+  color: var(--color-text-muted);
+  font-family: var(--font-heading);
   font-weight: 500;
   font-size: 0.95rem;
   text-decoration: none;
   border-radius: var(--border-radius-sm);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
 }
 
 .navbar__link:hover {
-  color: var(--color-white);
+  color: var(--color-primary);
+  background-color: var(--color-bg-alt);
 }
 
-.navbar__link:focus-visible {
-  outline: var(--focus-ring);
-  outline-offset: var(--focus-ring-offset);
+.navbar__link--active {
+  color: var(--color-primary);
+  background-color: var(--color-bg-alt);
+}
+
+/* Navbar Actions (Entrar / Começar) */
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+@media (max-width: 767px) {
+  .navbar__actions {
+    width: 100%;
+    justify-content: stretch;
+    padding-bottom: var(--spacing-sm);
+    display: none; /* Oculta na navegação móvel padrão, pode ser exibido dentro do collapse se necessário */
+  }
+
+  .navbar__collapse--open ~ .navbar__actions,
+  .navbar__collapse--open .navbar__actions {
+    display: flex;
+  }
 }
 
 @media (min-width: 768px) {
@@ -120,16 +157,32 @@
     flex-basis: auto;
     max-height: none;
     overflow: visible;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
   }
 
   .navbar__list {
     flex-direction: row;
     align-items: center;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
     padding: 0;
   }
 
   .navbar__link {
-    padding: var(--spacing-xs) 0;
+    padding: 0.25rem 0.5rem;
+    min-height: auto;
+    border-radius: 0;
+    background-color: transparent !important;
+  }
+
+  .navbar__link:hover {
+    color: var(--color-primary);
+  }
+
+  .navbar__link--active {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0px;
   }
 }

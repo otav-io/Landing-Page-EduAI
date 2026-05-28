@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: clamp(16px, 1.1vw, 20px);
   scroll-behavior: smooth;
 }
 
@@ -41,6 +41,22 @@ input, button, textarea, select {
   font: inherit;
 }
 
+/* Prevenir zoom automático no iOS */
+input, select, textarea {
+  font-size: max(16px, 1rem);
+}
+
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+}
+
+/* Navegação por teclado visível */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--border-radius-sm);
 }

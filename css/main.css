@@ -1,4 +1,4 @@
-@layer tokens, reset, base, components, utilities;
+@layer tokens, reset, base, layout, components, utilities;
 
 @import url("./tokens/primitives.css") layer(tokens);
 @import url("./tokens/semantic.css") layer(tokens);
@@ -8,7 +8,7 @@
 @import url("./reset.css") layer(reset);
 
 @import url("./base.css") layer(base);
-@import url("./layout.css") layer(base);
+@import url("./layout.css") layer(layout);
 
 @import url("./components/navbar.css") layer(components);
 @import url("./components/hero.css") layer(components);

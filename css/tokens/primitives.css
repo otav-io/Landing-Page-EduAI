@@ -1,18 +1,26 @@
 :root {
   /* Primitive Colors */
-  --_blue-500: #2e75b6;
-  --_blue-600: #2563a8;
-  --_blue-700: #1d4ed8;
+  --_blue-500: #004ac6;
+  --_blue-600: #003ea8;
+  --_blue-700: #002e7a;
 
-  --_slate-50: #f8fafc;
-  --_slate-100: #f1f5f9;
-  --_slate-200: #e2e8f0;
+  --_purple-500: #712ae2;
+  --_purple-600: #5a00c6;
+  --_purple-fixed: #eaddff;
+
+  --_teal-500: #006058;
+  --_teal-600: #005049;
+  --_teal-fixed: #89f5e7;
+
+  --_slate-50: #f8f9ff;
+  --_slate-100: #eff4ff;
+  --_slate-200: #dce9ff;
   --_slate-300: #cbd5e1;
   --_slate-400: #94a3b8;
-  --_slate-500: #64748b;
-  --_slate-800: #1e293b;
-  --_slate-900: #0f172a;
-  --_slate-950: #020617;
+  --_slate-500: #737686;
+  --_slate-800: #0b1c30;
+  --_slate-900: #0b1c30;
+  --_slate-950: #050e18;
   
   --_gray-400: #9ca3af;
   --_gray-800: #1F2937;
@@ -20,3 +28,4 @@
   
   --_white: #ffffff;
 }
+

@@ -1,32 +1,88 @@
 /* Seção CTA (isolada do footer — ITCSS) */
 .cta {
   padding: var(--spacing-xxl) 0;
-  text-align: center;
-  background: var(--color-bg-dark);
+  background: var(--color-bg-default);
+}
+
+.cta__card {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
   color: var(--color-white);
+  padding: var(--spacing-xxl) var(--spacing-md);
+  border-radius: var(--border-radius-xl);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Elementos decorativos */
+.cta__card::before {
+  content: "";
+  position: absolute;
+  top: -6rem;
+  right: -6rem;
+  width: 16rem;
+  height: 16rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-full);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.cta__card::after {
+  content: "";
+  position: absolute;
+  bottom: -6rem;
+  left: -6rem;
+  width: 16rem;
+  height: 16rem;
+  background: rgba(113, 42, 226, 0.25);
+  border-radius: var(--border-radius-full);
+  filter: blur(40px);
+  pointer-events: none;
 }
 
 .cta__inner {
-  width: var(--container-width);
-  max-width: var(--container-max-width);
+  max-width: 44rem;
   margin-inline: auto;
+  position: relative;
+  z-index: 10;
+  padding: 0 var(--spacing-sm);
 }
 
 .cta__title {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-weight: 700;
+  font-size: var(--font-size-h2);
   margin-bottom: var(--spacing-md);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  line-height: 1.25;
 }
 
-.cta .btn.btn--primary {
-  margin-top: var(--spacing-sm);
+.cta__description {
+  font-size: var(--font-size-body);
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.6;
+  max-width: 32rem;
+  margin-inline: auto;
+}
+
+.cta .btn {
   background: var(--color-white);
   color: var(--color-primary);
   border-color: var(--color-white);
+  box-shadow: var(--shadow-md);
 }
 
-.cta .btn.btn--primary:hover {
+.cta .btn:hover {
   background: var(--color-bg-alt);
-  border-color: var(--color-bg-alt);
   color: var(--color-primary-hover);
+  border-color: var(--color-bg-alt);
+}
+
+@media (max-width: 767px) {
+  .cta__card {
+    padding: var(--spacing-xl) var(--spacing-sm);
+    border-radius: var(--border-radius-lg);
+  }
 }

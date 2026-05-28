@@ -46,4 +46,15 @@
       ticking = false;
     });
   });
+
+  /* Detecção de navegação por teclado para acessibilidade */
+  document.body.addEventListener("keydown", function (e) {
+    if (e.key === "Tab") {
+      document.body.classList.add("using-keyboard");
+    }
+  });
+
+  document.body.addEventListener("mousedown", function () {
+    document.body.classList.remove("using-keyboard");
+  });
 })();
