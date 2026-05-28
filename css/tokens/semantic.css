@@ -20,6 +20,8 @@
   --color-bg-dark: var(--_slate-900);
   --color-bg-darker: var(--_slate-950);
   --color-footer-bg: var(--_slate-50);
+  --color-header-bg: rgba(255, 255, 255, 0.92);
+  --color-header-bg-scrolled: rgba(255, 255, 255, 0.98);
 
   /* Text */
   --color-text-main: var(--_slate-800);
@@ -57,6 +59,8 @@
   --color-bg-default: var(--_slate-950);
   --color-bg-alt: var(--_slate-900);
   --color-bg-card: var(--_slate-800);
+  --color-header-bg: rgba(11, 28, 48, 0.92);
+  --color-header-bg-scrolled: rgba(11, 28, 48, 0.98);
   
   --color-text-main: var(--_slate-50);
   --color-text-muted: var(--_slate-300);

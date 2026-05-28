@@ -1,3 +1,8 @@
+/**
+ * @file btn.css
+ * @description Componente de Botão com suporte a variantes (primary, outline, ghost), arredondamento flexível, estados interativos completos e acessibilidade.
+ */
+
 /* Bloco: botão (variantes da aula — desafio / padrão útil) */
 .btn {
   display: inline-flex;
@@ -24,6 +29,13 @@
 
 .btn:active {
   transform: scale(0.95);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none !important;
 }
 
 .btn--round {

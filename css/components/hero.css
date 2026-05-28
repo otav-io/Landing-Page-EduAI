@@ -1,3 +1,8 @@
+/**
+ * @file hero.css
+ * @description Componente de Hero com layout de duas colunas, suporte a badges de categoria, chamadas para ação e imagem principal.
+ */
+
 .hero {
   padding: var(--spacing-xl) 0 var(--spacing-xxl);
   background: radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.06), transparent 50%), var(--color-bg-default);

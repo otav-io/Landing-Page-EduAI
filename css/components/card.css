@@ -1,3 +1,8 @@
+/**
+ * @file card.css
+ * @description Componente de Card flexível com suporte a imagens, ícones, tags de categoria e container queries.
+ */
+
 .card {
   background: var(--color-bg-card);
   padding: var(--spacing-lg);

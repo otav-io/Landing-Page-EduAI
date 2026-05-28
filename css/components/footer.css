@@ -1,3 +1,8 @@
+/**
+ * @file footer.css
+ * @description Componente de Rodapé (Footer) com layout em colunas no desktop, tema claro e links com área de toque acessível.
+ */
+
 .footer {
   background: var(--color-footer-bg);
   color: var(--color-footer-text);

@@ -1,9 +1,14 @@
+/**
+ * @file navbar.css
+ * @description Componente de Cabeçalho e Barra de Navegação (Navbar) com tema claro, glassmorphism e responsividade.
+ */
+
 /* Bloco: header (layout fixo / sombra ao rolar) */
 .header {
   position: sticky;
   top: 0;
   z-index: var(--z-header);
-  background: var(--color-header-bg, rgba(255, 255, 255, 0.95));
+  background: var(--color-header-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border-light);
@@ -13,7 +18,7 @@
 
 .header--scrolled {
   box-shadow: var(--shadow-header-scrolled);
-  background: var(--color-header-bg-scrolled, rgba(255, 255, 255, 0.98));
+  background: var(--color-header-bg-scrolled);
 }
 
 .header--scrolled .navbar {
@@ -173,15 +178,16 @@
     padding: 0.25rem 0.5rem;
     min-height: auto;
     border-radius: 0;
-    background-color: transparent !important;
+    background-color: transparent;
   }
 
-  .navbar__link:hover {
+  .navbar__link:hover,
+  .navbar__link--active {
+    background-color: transparent;
     color: var(--color-primary);
   }
 
   .navbar__link--active {
-    color: var(--color-primary);
     border-bottom: 2px solid var(--color-primary);
     padding-bottom: 0px;
   }
